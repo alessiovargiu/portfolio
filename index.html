@@ -6,20 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alessio Vargiu | Portfolio</title>
 
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+
+    <meta property="og:title" content="Alessio Vargiu | Portfolio">
+    <meta property="og:description" content="Portfolio di Alessio Vargiu, web developer. Scopri il mio percorso, le mie competenze e i miei progetti.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alessiovargiu.github.io/portfolio/">
+    <meta property="og:image" content="https://alessiovargiu.github.io/portfolio/assets/img/hero-background.png">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="css/style.css">
+    
 </head>
 
 <body>
 
     <header>
+
         <nav>
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="progetti.html">Progetti</a>
-            <a href="contatti.html">Contattami</a>
+
+            <!-- Menu desktop -->
+            <div class="desktop-menu">
+                <a href="index.html">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="progetti.html">Progetti</a>
+                <a href="contatti.html">Contattami</a>
+            </div>
+
+            <!-- Menu mobile -->
+            <details class="mobile-menu">
+
+                <summary>Menu</summary>
+
+                <div class="menu-links">
+                    <a href="index.html">Home</a>
+                    <a href="cv.html">CV</a>
+                    <a href="progetti.html">Progetti</a>
+                    <a href="contatti.html">Contattami</a>
+                </div>
+
+            </details>
+
         </nav>
+
     </header>
+
 
     <main>
 
@@ -54,14 +87,47 @@
             <h2>Competenze</h2>
 
             <div class="skills-grid">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Sass</div>
-                <div>Bootstrap</div>
-                <div>Flexbox</div>
-                <div>CSS Grid</div>
-                <div>Git</div>
-                <div>GitHub</div>
+
+                <div>
+                    <h3>HTML</h3>
+                    <p>Struttura e organizzazione semantica delle pagine web.</p>
+                </div>
+
+                <div>
+                    <h3>CSS</h3>
+                    <p>Stile, layout e responsive design delle pagine web.</p>
+                </div>
+
+                <div>
+                    <h3>Sass</h3>
+                    <p>Organizzazione e gestione del CSS attraverso SCSS.</p>
+                </div>
+
+                <div>
+                    <h3>Bootstrap</h3>
+                    <p>Utilizzo di griglie e componenti per la realizzazione di interfacce responsive.</p>
+                </div>
+
+                <div>
+                    <h3>Flexbox</h3>
+                    <p>Creazione e gestione di layout flessibili e allineamento degli elementi.</p>
+                </div>
+
+                <div>
+                    <h3>CSS Grid</h3>
+                    <p>Creazione di layout strutturati attraverso righe e colonne.</p>
+                </div>
+
+                <div>
+                    <h3>Git</h3>
+                    <p>Gestione delle versioni e dei cambiamenti del codice del progetto.</p>
+                </div>
+
+                <div>
+                    <h3>GitHub</h3>
+                    <p>Gestione e pubblicazione dei progetti attraverso repository online.</p>
+                </div>
+
             </div>
         </section>
 
@@ -80,6 +146,12 @@
                         Primo progetto realizzato durante il percorso di studio,
                         sviluppato con HTML e CSS.
                     </p>
+
+                    <div class="project-technologies">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                    </div>
+
                     <a href="https://alessiovargiu.github.io/depyl/" target="_blank" rel="noopener noreferrer">
                         Guarda il progetto
                     </a>
@@ -96,6 +168,12 @@
                         per la verifica dell'accesso agli incentivi.
                     </p>
 
+                    <div class="project-technologies">
+                        <span>Logica</span>
+                        <span>Pseudocodice</span>
+                        <span>Test</span>
+                    </div>
+
                     <a href="https://github.com/alessiovargiu/bonny" target="_blank" rel="noopener noreferrer">
                      Vedi il progetto su GitHub
                     </a>
@@ -104,15 +182,32 @@
             </div>
         </section>
 
-        <section class="contact-cta">
-            <h2>Hai un progetto o vuoi metterti in contatto?</h2>
+        <section class="social-cta">
+
+            <h2>Vuoi conoscermi meglio?</h2>
 
             <p>
-                Puoi trovare maggiori informazioni sul mio percorso nel CV
-                oppure contattarmi direttamente.
+                Scopri i miei progetti e il mio percorso professionale.
             </p>
 
-            <a href="contatti.html">Contattami</a>
+            <div class="social-links">
+
+                <a href="https://github.com/alessiovargiu/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-github"></i>
+                    GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/alessio-vargiu-49b0813a0/" target="_blank" rel="noopener noreferrer">
+                    <i class="bi bi-linkedin"></i>
+                    LinkedIn
+                </a>
+
+            </div>
+
+            <a href="contatti.html" class="social-contact">
+                Contattami
+            </a>
+
         </section>
     </main>
 

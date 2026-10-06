@@ -4,26 +4,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alessio Vargiu | Contattami</title>
+
+    <title>Alessio Vargiu | Contatti</title>
+
+    <link rel="icon" type="image/svg+xml" href="favicon/favicon.svg">
+
+    <meta property="og:title" content="Alessio Vargiu | Contatti">
+    <meta property="og:description" content="Contatta Alessio Vargiu per opportunità professionali e progetti web.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://alessiovargiu.github.io/portfolio/contatti.html">
+    <meta property="og:image" content="https://alessiovargiu.github.io/portfolio/assets/img/hero-background.png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <!-- menu -->
-        </nav>
-    </header>
+<header>
 
-    <main>
-        <!-- form di contatto -->
-    </main>
+    <nav>
 
-    <footer>
-        <!-- footer -->
-    </footer>
+        <!-- Menu desktop -->
+        <div class="desktop-menu">
+            <a href="index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="progetti.html">Progetti</a>
+            <a href="contatti.html">Contattami</a>
+        </div>
+
+        <!-- Menu mobile -->
+        <details class="mobile-menu">
+
+            <summary>Menu</summary>
+
+            <div class="menu-links">
+                <a href="index.html">Home</a>
+                <a href="cv.html">CV</a>
+                <a href="progetti.html">Progetti</a>
+                <a href="contatti.html">Contattami</a>
+            </div>
+
+        </details>
+
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="contact">
+
+        <h1>Contattami</h1>
+
+        <p>
+            Hai una domanda, una proposta o vuoi parlare di un progetto?
+            Compila il modulo e inviami un messaggio.
+        </p>
+
+        <form id="contact-form">
+
+            <div>
+                <label for="name">Nome</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div>
+                <label for="subject">Oggetto</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+
+            <div>
+                <label for="message">Messaggio</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+            </div>
+
+            <button type="submit">Invia messaggio</button>
+
+            <p id="form-message"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Alessio Vargiu</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@5/dist/email.min.js"></script>
+<script src="js/script.js"></script>
 
 </body>
 
